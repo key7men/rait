@@ -1,0 +1,25 @@
+{
+  "default": {
+    "category": "misc",
+    "articleName": "New Article"
+  },
+  "preview": {
+    "server": "127.0.0.1",
+    "port": "8000"
+  },
+  "blog": {
+    "title": "[rait]",
+    "copyRight": "rait",
+    "dateFormat": "YYYY-MM-DD",
+    "timeFormat": "HH:mm:ss"
+  },
+  "publish": {
+    "gitAddress": "your git repo url",
+    "path": "which directory do you want wo publish for static site"
+  },
+  "menus": {
+    "misc": 0
+  },
+  "articles": [],
+  "initialization": true
+}

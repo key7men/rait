@@ -1,0 +1,21 @@
+html
+    include head.pug
+    body
+        div.main
+            div.container
+                div.content
+                    include:markdown-it #{Filepath}
+            div.nav
+                div.sub
+                    ul
+                        - var lists = #{Articles}
+                        each item in lists
+                            li
+                                a(href=item.link) #{item.title}
+                div.menu
+                    ul
+                        - var menus = #{Menus}
+                        each value, key in menus
+                            li
+                                a(id=key href='javascript:void(0)') #{key}[#{value}]
+        include footer.pug
